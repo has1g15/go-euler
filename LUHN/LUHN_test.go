@@ -5,7 +5,7 @@ import (
 )
 
 func TestAccountNumber(t *testing.T) {
-	accountNumber := "374209134567891"
+	accountNumber := "xxx"
 	scaledNumber := scaleTo10Digits(accountNumber)
 	if checkLength(scaledNumber) && checkType(scaledNumber) {
 		if !luhn(scaledNumber) {
@@ -13,7 +13,3 @@ func TestAccountNumber(t *testing.T) {
 		}
 	}
 }
-
-//374209134567891
-//376000188331009
-//374200462621008
